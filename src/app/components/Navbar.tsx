@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 export function NavBar(): any {
 	return (
-		<div className='flex justify-between bg-blue-950 w-full text-center'>
+		<div className='flex justify-between bg-sky-800 w-full text-center'>
 			<div className='pl-5 pt-5 pb-2'>
 				<Image
 					src='/logo.jpg'
-					alt='Descripción de la imagen'
+					alt='Academia Numen'
 					width={200}
 					height={100}
 				/>
@@ -24,7 +24,7 @@ export function NavBar(): any {
 					</li>
 					<li className='mr-2 '>
 						<Link
-							href='/ClasesEspeciales'
+							href='/clasesEspeciales'
 							className='p-3 inline-block hover:text-black'
 						>
 							Clases especiales
