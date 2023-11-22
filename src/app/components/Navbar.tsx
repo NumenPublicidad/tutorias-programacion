@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export function NavBar(): any {
 	return (
-		<div className='flex justify-between bg-sky-800 w-full text-center'>
+		<div className='flex justify-between bg-sky-900 w-full text-center'>
 			<div className='pl-5 pt-5 pb-2'>
 				<Image
 					src='/logo.jpg'
