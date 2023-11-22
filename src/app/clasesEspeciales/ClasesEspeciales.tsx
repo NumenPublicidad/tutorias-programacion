@@ -1,6 +1,6 @@
 export const ClasesEspeciales = ({ ClasesEspeciales }) => {
 	return (
-		<div className='flex flex-col justify-between p-4 border border-gray-300 rounded-md shadow-md'>
+		<div className='flex flex-col items-center justify-between p-4 border border-gray-300 rounded-md shadow-md'>
 			<div className='flex flex-col'>
 				<h2 className='text-xl font-bold mb-2'>
 					{ClasesEspeciales.name}
