@@ -16,7 +16,8 @@ export function NavBar(): any {
 				<ul className=' flex flex-wrap space-x-8 text-base text-white'>
 					<li className='mr-2'>
 						<Link
-							href='/tutorias'
+							href='/'
+							target={'_blank'}
 							className='p-3 inline-block hover:text-black'
 						>
 							Tutorias
@@ -24,6 +25,7 @@ export function NavBar(): any {
 					</li>
 					<li className='mr-2 '>
 						<Link
+							target={'_blank'}
 							href='/clasesEspeciales'
 							className='p-3 inline-block hover:text-black'
 						>
@@ -32,7 +34,8 @@ export function NavBar(): any {
 					</li>
 					<li>
 						<Link
-							href='/'
+							target={'_blank'}
+							href='/examenes'
 							className='p-3 inline-block text-gray-400 cursor-not-allowed hover:text-black'
 						>
 							Examenes
