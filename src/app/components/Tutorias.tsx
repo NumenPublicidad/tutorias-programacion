@@ -33,7 +33,7 @@ export const Tutorias = ({ tutoria }) => {
           <div className='text-8xl flex items-center justify-center'>{getIconComponent(tutoria.icon)}</div>
           <h3 className='text-lg w-full mb-4 flex justify-center my-3'>{tutoria.teacher}</h3>
           <a href={tutoria.zoom} target={'_blank'} className='hover:underline'>
-            <button className='bg-blue-500 md:px-3 md:py-2npm px-3 py-1 lg:px-3 rounded-xl hover:bg-white hover:text-blue-600 hover:font-bold'>Enlace de la reunión</button>
+            <button className='bg-blue-500 px-3 py-2 lg:py-3 rounded-xl hover:bg-white hover:text-blue-600'>Enlace de la reunión</button>
           </a>
         </div>
       </div>
