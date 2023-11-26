@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { Turn as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 
-export default function Navbar() {
+export function Navbar() {
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
 	const onNavLinkClick = () => {
