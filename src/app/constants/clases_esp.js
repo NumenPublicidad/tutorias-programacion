@@ -2,6 +2,7 @@ export const clasesEspecialesData = [
 	{
 		id: 1,
 		name: 'Clase especial de JavaScrip',
+		day: '13/09/2023',
 		hour: '18:30 a 20:30',
 		teacher: 'Matias Domingues',
 		zoom: 'https://www.zoom.com',
@@ -9,6 +10,7 @@ export const clasesEspecialesData = [
 	{
 		id: 2,
 		name: 'Clase especial de React',
+		day: '13/09/2023',
 		hour: '18:30 a 20:30',
 		teacher: 'Matias Domingues',
 		zoom: 'https://www.zoom.com',
@@ -16,6 +18,7 @@ export const clasesEspecialesData = [
 	{
 		id: 3,
 		name: 'Clase especial de Typescript',
+		day: '13/09/2023',
 		hour: '18:30 a 20:30',
 		teacher: 'Matias Domingues',
 		zoom: 'https://www.zoom.com',
@@ -23,6 +26,7 @@ export const clasesEspecialesData = [
 	{
 		id: 4,
 		name: 'Clase especial de Backend',
+		day: '13/09/2023',
 		hour: '18:30 a 20:30',
 		teacher: 'Matias Domingues',
 		zoom: 'https://www.zoom.com',
@@ -30,6 +34,39 @@ export const clasesEspecialesData = [
 	{
 		id: 5,
 		name: 'Clase especial de SQL',
+		day: '13/09/2023',
+		hour: '18:30 a 20:30',
+		teacher: 'Matias Domingues',
+		zoom: 'https://www.zoom.com',
+	},
+	{
+		id: 6,
+		name: 'Clase especial de Node JS',
+		day: '13/09/2023',
+		hour: '18:30 a 20:30',
+		teacher: 'Matias Domingues',
+		zoom: 'https://www.zoom.com',
+	},
+	{
+		id: 7,
+		name: 'Clase especial de Tailwind',
+		day: '13/09/2023',
+		hour: '18:30 a 20:30',
+		teacher: 'Matias Domingues',
+		zoom: 'https://www.zoom.com',
+	},
+	{
+		id: 8,
+		name: 'Clase especial de Python',
+		day: '13/09/2023',
+		hour: '18:30 a 20:30',
+		teacher: 'Matias Domingues',
+		zoom: 'https://www.zoom.com',
+	},
+	{
+		id: 9,
+		name: 'Clase especial de Postgresql',
+		day: '13/09/2023',
 		hour: '18:30 a 20:30',
 		teacher: 'Matias Domingues',
 		zoom: 'https://www.zoom.com',
