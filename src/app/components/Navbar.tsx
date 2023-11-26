@@ -1,45 +1,80 @@
+'use client';
+
 import Link from 'next/link';
 import Image from 'next/image';
+import { Turn as Hamburger } from 'hamburger-react';
+import { useState } from 'react';
 
-export function NavBar(): any {
+export default function Navbar() {
+	const [hamburgerOpen, setHamburgerOpen] = useState(false);
+
+	const onNavLinkClick = () => {
+		setTimeout(() => {
+			setHamburgerOpen(!hamburgerOpen);
+		}, 150);
+	};
+
 	return (
-		<div className='flex justify-between bg-sky-900 w-full text-center'>
-			<div className='pl-5 pt-5 pb-2'>
-				<Image
-					src='/logo.jpg'
-					alt='Academia Numen'
-					width={200}
-					height={100}
-				/>
-			</div>
-			<div className='flex justify-evenly items-center mr-10'>
-				<ul className=' flex flex-wrap space-x-8 text-base text-white'>
-					<li className='mr-2'>
-						<Link
-							href='/tutorias'
-							className='p-3 inline-block hover:text-black'
-						>
-							Tutorias
+		<>
+			<header className='max-w-screen bg-blue-950 backdrop-blur-[1px]'>
+				<div className='px-6 py-5 flex items-center space-y-0 mx-auto max-w-screen-xl'>
+					<div className='flex-grow flex justify-start'>
+						<Link href='/'>
+							<Image
+								src='/logo.jpg'
+								alt='Academia Numen'
+								width={150}
+								height={30}
+								priority
+							/>
 						</Link>
-					</li>
-					<li className='mr-2 '>
-						<Link
-							href='/clasesEspeciales'
-							className='p-3 inline-block hover:text-black'
-						>
-							Clases especiales
-						</Link>
-					</li>
-					<li>
-						<Link
-							href='/'
-							className='p-3 inline-block text-gray-400 cursor-not-allowed hover:text-black'
-						>
-							Examenes
-						</Link>
-					</li>
-				</ul>
-			</div>
-		</div>
+					</div>
+					<div className='hidden sm:flex items-center justify-center space-x-6 font-medium text-white tracking-wide'>
+						<nav className='flex items-center justify-end space-x-8 text-sm'>
+							<Link href='/'>Tutorias</Link>
+							<Link href='/clasesEspeciales'>
+								Clases Especiales
+							</Link>
+							<Link href='/examenes'>Examenes</Link>
+						</nav>
+					</div>
+					<div className='sm:hidden'>
+						<Hamburger
+							toggled={hamburgerOpen}
+							toggle={setHamburgerOpen}
+							size={28}
+							direction='right'
+							easing='ease-in-out'
+							color='#fff'
+						/>
+					</div>
+				</div>
+			</header>
+			{hamburgerOpen && (
+				<div className='hambuger-menu flex flex-col absolute left-0 text-lg text-white items-center z-[9999] bg-blue-950 backdrop-blur-[1px] w-screen sm:hidden'>
+					<Link
+						href='/'
+						className='w-full !rounded-none !text-base !p-5'
+						onClick={onNavLinkClick}
+					>
+						Tutorias
+					</Link>
+					<Link
+						href='/clasesEspeciales'
+						className='w-full !rounded-none !text-base !p-5'
+						onClick={onNavLinkClick}
+					>
+						Clases Especiales
+					</Link>
+					<Link
+						href='/examenes'
+						className='w-full !rounded-none !text-base !p-5'
+						onClick={onNavLinkClick}
+					>
+						Examenes
+					</Link>
+				</div>
+			)}
+		</>
 	);
 }

@@ -1,4 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {};
+// next.config.js
+module.exports = {
+	experimental: {
+		reactRoot: true,
+	},
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
