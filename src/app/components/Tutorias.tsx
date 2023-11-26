@@ -18,7 +18,7 @@ const getIconComponent = (icon) => {
 
 export const Tutorias = ({ tutoria }) => {
   return (
-    <div className='p-8 flex flex-row  h-auto drop-shadow-2xl lg:w-full'>
+    <div className='p-8 flex flex-row  h-auto drop-shadow-2xl'>
       {/* Left column */}
       <div className='w-1/2 bg-white px-6 py-10 flex flex-col drop-shadow-2xl justify-center text-center items-center rounded-bl-2xl '>
         <h2 className='text-2xl font-bold mb-2'>{tutoria.name}</h2>
@@ -33,7 +33,7 @@ export const Tutorias = ({ tutoria }) => {
           <div className='text-8xl flex items-center justify-center'>{getIconComponent(tutoria.icon)}</div>
           <h3 className='text-lg w-full mb-4 flex justify-center my-3'>{tutoria.teacher}</h3>
           <a href={tutoria.zoom} target={'_blank'} className='hover:underline'>
-            <button className='bg-blue-500 md:px-3 md:py-2 px-3 py-1 lg:px-3 rounded-xl hover:bg-white hover:text-blue-600 hover:font-bold'>Enlace de la reunión</button>
+            <button className='bg-blue-500 px-3 py-2 lg:py-3 rounded-xl hover:bg-white hover:text-blue-600'>Enlace de la reunión</button>
           </a>
         </div>
       </div>
