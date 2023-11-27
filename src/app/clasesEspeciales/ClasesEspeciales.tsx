@@ -4,7 +4,7 @@ export const ClasesEspeciales = ({ ClasesEspeciales }) => {
 	return (
 		<div className='flex flex-col justify-between border border-gray-300 rounded-md shadow-md'>
 			<div className='flex flex-col w-full items-center'>
-				<h2 className='text-xl w-full font-bold bg-black text-white p-3 rounded-t-lg'>
+				<h2 className='text-xl w-full text-center font-bold bg-black text-white p-3 rounded-t-lg'>
 					{ClasesEspeciales.name}
 				</h2>
 				<h3 className='text-lg mb-2 text-white'>
@@ -28,9 +28,9 @@ export const ClasesEspeciales = ({ ClasesEspeciales }) => {
 			<div className='flex justify-center'>
 				<a
 					href={ClasesEspeciales.zoom}
-					className='text-blue-500'
+					className='text-white p-3'
 				>
-					<button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mb-2 rounded'>
+					<button className='bg-blue-500 md:px-3 md:py-2 px-3 py-1 lg:px-3 rounded-xl hover:bg-white hover:text-blue-600 hover:font-bold'>
 						Enlace de la reunión
 					</button>
 				</a>

@@ -31,11 +31,24 @@ export function Navbar() {
 					</div>
 					<div className='hidden sm:flex items-center justify-center space-x-6 font-medium text-white tracking-wide'>
 						<nav className='flex items-center justify-end space-x-8 text-sm'>
-							<Link href='/'>Tutorias</Link>
-							<Link href='/clasesEspeciales'>
+							<Link
+								className='rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-violet-300 hover:underline decoration-sky-500 decoration-4 underline-offset-4'
+								href='/'
+							>
+								Tutorias
+							</Link>
+							<Link
+								className='rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-violet-300 hover:underline decoration-sky-500 decoration-4 underline-offset-4'
+								href='/clasesEspeciales'
+							>
 								Clases Especiales
 							</Link>
-							<Link href='/examenes'>Examenes</Link>
+							<Link
+								className='rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-violet-300 hover:underline decoration-sky-500 decoration-4 underline-offset-4'
+								href='/examenes'
+							>
+								Examenes
+							</Link>
 						</nav>
 					</div>
 					<div className='sm:hidden'>
@@ -54,21 +67,21 @@ export function Navbar() {
 				<div className='hambuger-menu flex flex-col absolute left-0 text-lg text-white items-center z-[9999] bg-blue-950 backdrop-blur-[1px] w-screen sm:hidden'>
 					<Link
 						href='/'
-						className='w-full !rounded-none !text-base !p-5'
+						className='w-full !rounded-none !text-base !p-5 hover:underline decoration-sky-500 decoration-4 underline-offset-4'
 						onClick={onNavLinkClick}
 					>
 						Tutorias
 					</Link>
 					<Link
 						href='/clasesEspeciales'
-						className='w-full !rounded-none !text-base !p-5'
+						className='w-full !rounded-none !text-base !p-5 hover:underline decoration-sky-500 decoration-4 underline-offset-4'
 						onClick={onNavLinkClick}
 					>
 						Clases Especiales
 					</Link>
 					<Link
 						href='/examenes'
-						className='w-full !rounded-none !text-base !p-5'
+						className='w-full !rounded-none !text-base !p-5 hover:underline decoration-sky-500 decoration-4 underline-offset-4'
 						onClick={onNavLinkClick}
 					>
 						Examenes
