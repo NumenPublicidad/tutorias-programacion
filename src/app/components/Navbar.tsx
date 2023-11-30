@@ -16,7 +16,7 @@ export function Navbar() {
 
 	return (
 		<>
-			<header className='max-w-screen bg-blue-950 backdrop-blur-[1px]'>
+			<header className='max-w-screen bg-blue-950  border-b border-white/25  backdrop-blur-[1px]'>
 				<div className='px-6 py-5 flex items-center space-y-0 mx-auto max-w-screen-xl'>
 					<div className='flex-grow flex justify-start'>
 						<Link href='/'>
