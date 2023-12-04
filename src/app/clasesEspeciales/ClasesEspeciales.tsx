@@ -11,7 +11,7 @@ export const ClasesEspeciales: React.FC<{
 	ClasesEspeciales: ClasesEspecialesProps;
 }> = ({ ClasesEspeciales }): JSX.Element => {
 	return (
-		<div className='flex flex-col h-auto shadow-md pt-12 w-[80%] mx-auto'>
+		<div className='flex flex-col h-auto shadow-md pt-12 w-full mx-auto'>
 			<div className=' flex   place-content-center items-center p-3 bg-white h-36 rounded-tl-2xl'>
 				<h2 className='text-xl w-full text-center font-bold  text-black'>
 					{ClasesEspeciales.name}
