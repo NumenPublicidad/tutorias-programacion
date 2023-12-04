@@ -1,5 +1,3 @@
-import { FaJsSquare } from 'react-icons/fa';
-
 export const tutoriasData = [
 	{
 		id: 1,

@@ -1,6 +1,15 @@
 import { TfiAlarmClock } from 'react-icons/tfi';
 
-export const ClasesEspeciales = ({ ClasesEspeciales }) => {
+// Define una interfaz para describir la forma de los datos esperados
+interface ClasesEspecialesProps {
+	name: string;
+	hour: string;
+	zoom: string;
+}
+
+export const ClasesEspeciales: React.FC<{
+	ClasesEspeciales: ClasesEspecialesProps;
+}> = ({ ClasesEspeciales }): JSX.Element => {
 	return (
 		<div className='flex flex-col h-auto shadow-md pt-12 w-[80%] mx-auto'>
 			<div className=' flex   place-content-center items-center p-3 bg-white h-36 rounded-tl-2xl'>
@@ -18,10 +27,7 @@ export const ClasesEspeciales = ({ ClasesEspeciales }) => {
 						}}
 					>
 						<TfiAlarmClock className='mr-2' />
-						<p>
-							{ClasesEspeciales.hour}
-						</p>
-						
+						<p>{ClasesEspeciales.hour}</p>
 					</h3>
 				</div>
 				<div className='flex justify-center'>
