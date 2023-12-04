@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Turn as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 
 export function Navbar(): any {
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -14,9 +15,31 @@ export function Navbar(): any {
 		}, 150);
 	};
 
+	const motionNav = {
+		initial: {
+			scaleY: 0,
+			opacity: 0,
+		},
+		animate: {
+			scaleY: 1,
+			opacity: 1,
+			transition: {
+				duration: 0.5,
+				ease: [0.12, 0, 0.39, 0],
+			},
+		},
+		exit: {
+			scaleY: 0,
+			transition: {
+				duration: 0.5,
+				ease: [0.12, 0, 0.39, 1],
+			},
+		},
+	};
+
 	return (
 		<>
-			<header className='max-w-screen bg-blue-950  border-b border-white/25  backdrop-blur-[1px]'>
+			<header className='max-w-screen bg-blue-950  border-b border-white/50  backdrop-blur-[1px]'>
 				<div className='px-6 py-5 flex items-center space-y-0 mx-auto max-w-screen-xl'>
 					<div className='flex-grow flex justify-start'>
 						<Link href='/'>
@@ -63,31 +86,39 @@ export function Navbar(): any {
 					</div>
 				</div>
 			</header>
-			{hamburgerOpen && (
-				<div className='hambuger-menu flex flex-col absolute left-0 text-lg text-white items-center z-[9999] bg-blue-950 backdrop-blur-[1px] w-screen sm:hidden'>
-					<Link
-						href='/'
-						className='w-full !rounded-none !text-base !p-5 hover:underline decoration-sky-500 decoration-4 underline-offset-4'
-						onClick={onNavLinkClick}
+			<AnimatePresence>
+				{hamburgerOpen && (
+					<motion.div
+						variants={motionNav}
+						initial='initial'
+						animate='animate'
+						exit='exit'
+						className='hambuger-menu origin-top gap-y-12 scroll-pt-52 h-full text-center flex flex-col absolute text-white items-center justify-center z-[9999] bg-blue-950 backdrop-blur-[1px] w-screen sm:hidden'
 					>
-						Tutorias
-					</Link>
-					<Link
-						href='/clasesEspeciales'
-						className='w-full !rounded-none !text-base !p-5 hover:underline decoration-sky-500 decoration-4 underline-offset-4'
-						onClick={onNavLinkClick}
-					>
-						Clases Especiales
-					</Link>
-					<Link
-						href='/examenes'
-						className='w-full !rounded-none !text-base !p-5 hover:underline decoration-sky-500 decoration-4 underline-offset-4'
-						onClick={onNavLinkClick}
-					>
-						Examenes
-					</Link>
-				</div>
-			)}
+						<Link
+							href='/'
+							className='w-full !rounded-none underline text-xl !p-5 decoration-sky-500 decoration-4 underline-offset-8'
+							onClick={onNavLinkClick}
+						>
+							Tutorias
+						</Link>
+						<Link
+							href='/clasesEspeciales'
+							className='w-full !rounded-none underline text-xl !p-5 decoration-sky-500 decoration-4 underline-offset-8'
+							onClick={onNavLinkClick}
+						>
+							Clases Especiales
+						</Link>
+						<Link
+							href='/examenes'
+							className='w-full !rounded-none underline text-xl !p-5 decoration-sky-500 decoration-4 underline-offset-8'
+							onClick={onNavLinkClick}
+						>
+							Examenes
+						</Link>
+					</motion.div>
+				)}
+			</AnimatePresence>
 		</>
 	);
 }
