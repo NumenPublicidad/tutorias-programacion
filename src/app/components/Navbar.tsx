@@ -5,10 +5,10 @@ import Image from 'next/image';
 import { Turn as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 
-export function Navbar() {
+export function Navbar(): any {
 	const [hamburgerOpen, setHamburgerOpen] = useState(false);
 
-	const onNavLinkClick = () => {
+	const onNavLinkClick = (): any => {
 		setTimeout(() => {
 			setHamburgerOpen(!hamburgerOpen);
 		}, 150);
