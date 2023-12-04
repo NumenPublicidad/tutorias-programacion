@@ -93,25 +93,25 @@ export function Navbar(): any {
 						initial='initial'
 						animate='animate'
 						exit='exit'
-						className='hambuger-menu origin-top gap-y-12 scroll-pt-52 h-full text-center flex flex-col absolute text-white items-center justify-center z-[9999] bg-blue-950 backdrop-blur-[1px] w-screen sm:hidden'
+						className='hambuger-menu origin-top gap-y-7 h-[70%] text-center flex flex-col absolute text-white items-center justify-center z-[9999] bg-blue-950 backdrop-blur-[1px] w-screen sm:hidden'
 					>
 						<Link
 							href='/'
-							className='w-full !rounded-none underline text-xl !p-5 decoration-sky-500 decoration-4 underline-offset-8'
+							className='w-full !rounded-none underline text-xl !p-5 decoration-gray-300 decoration-4 underline-offset-8'
 							onClick={onNavLinkClick}
 						>
 							Tutorias
 						</Link>
 						<Link
 							href='/clasesEspeciales'
-							className='w-full !rounded-none underline text-xl !p-5 decoration-sky-500 decoration-4 underline-offset-8'
+							className='w-full !rounded-none underline text-xl !p-5 decoration-gray-300 decoration-4 underline-offset-8'
 							onClick={onNavLinkClick}
 						>
 							Clases Especiales
 						</Link>
 						<Link
 							href='/examenes'
-							className='w-full !rounded-none underline text-xl !p-5 decoration-sky-500 decoration-4 underline-offset-8'
+							className='w-full !rounded-none underline text-xl !p-5 decoration-gray-300 decoration-4 underline-offset-8'
 							onClick={onNavLinkClick}
 						>
 							Examenes
