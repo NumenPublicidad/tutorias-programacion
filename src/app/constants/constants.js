@@ -3,6 +3,10 @@ export const tutoriasData = [
 		id: 1,
 		name: 'HTML y CSS',
 		time1: 'Lunes 18:30 hs',
+<<<<<<< HEAD
+=======
+		// time2: '',
+>>>>>>> ed10a13a8da6edc127133f05d01ea179278edc70
 		teacher: 'Diana Mottura',
 		zoom: 'https://meet.google.com/xrs-ycfy-ero',
 		icon: 'FaHtml5',

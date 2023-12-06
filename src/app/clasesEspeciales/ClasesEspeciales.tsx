@@ -1,6 +1,5 @@
 import { TfiAlarmClock } from 'react-icons/tfi';
 
-// Define una interfaz para describir la forma de los datos esperados
 interface ClasesEspecialesProps {
 	name: string;
 	hour: string;
