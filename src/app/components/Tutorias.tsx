@@ -9,7 +9,7 @@ import {
 interface TutoriaProps {
 	name: string;
 	time1: string;
-	time2: string;
+	time2?: string;
 	icon: string;
 	teacher: string;
 	zoom: string;
