@@ -21,7 +21,7 @@ export const tutoriasData = [
 		name: 'React + Backend',
 		time1: 'Lunes 12:30 hs',
 		time2: 'Viernes 18:30 hs',
-		teacher: 'Jorge Ignacio Garay',
+		teacher: 'Marcos Gual',
 		zoom: 'https://meet.google.com/zmp-pjse-dum',
 		icon: 'FaReact',
 	},
