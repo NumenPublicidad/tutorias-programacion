@@ -66,12 +66,12 @@ export function Navbar(): any {
 							>
 								Clases Especiales
 							</Link>
-							<Link
+							{/* <Link
 								className='rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-violet-300 hover:underline decoration-sky-500 decoration-4 underline-offset-4'
 								href='/examenes'
 							>
 								Examenes
-							</Link>
+							</Link> */}
 						</nav>
 					</div>
 					<div className='sm:hidden'>
@@ -109,13 +109,13 @@ export function Navbar(): any {
 						>
 							Clases Especiales
 						</Link>
-						<Link
+						{/* <Link
 							href='/examenes'
 							className='w-full !rounded-none underline text-xl !p-5 decoration-gray-300 decoration-4 underline-offset-8'
 							onClick={onNavLinkClick}
 						>
 							Examenes
-						</Link>
+						</Link> */}
 					</motion.div>
 				)}
 			</AnimatePresence>
